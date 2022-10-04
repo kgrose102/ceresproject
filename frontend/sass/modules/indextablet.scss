@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px){
+    main{
+        #character{
+            width: 500px;
+        }
+    }
+
+    #explination{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        
+        .decor{
+            height: 70px;
+        }
+
+        #adv{
+            grid-column: 1;
+        }
+
+        #adp{
+            grid-column: 1;
+        }
+
+        #second{
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        #prot{
+            grid-column: 2;
+        }
+
+        #protp{
+            grid-column: 2;
+        }
+
+        #build{
+            grid-column: 1;
+        }
+
+        #buildp{
+            grid-column: 1;
+        }
+
+        #acc{
+            grid-column: 2;
+        }
+
+        #accp{
+            grid-column: 2;
+        }
+        
+        #extra{
+            display: block;
+            grid-column: 1;
+            grid-row: 8;
+        }
+    }
+}

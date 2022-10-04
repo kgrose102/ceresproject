@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Opens html, set site to english -->
+	<head>
+		<meta charset="UTF-8">
+		<!-- sets text language interpretation -->
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<!-- makes site view properly at mobile -->
+		<title>AV Project Home Page</title>
+		<!-- sets title on tab -->
+		<link href="../css/main.css" rel="stylesheet" type="text/css">
+		<!-- links in the css file. Says what type of file it'll be, and says what is found in the file -->
+		<link href="//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<!-- Content Goes Here -->
+		<a href="#app" class="skip-nav">Skip Navigation</a>
+		<!-- adds a hidden skip navigation button for screen readers only shows when in "focus" -->
+		<h1 hidden>Ceres Campaign Goals</h1>
+		<header id="header">
+			<div id="headerNav" class="gridCon">
+				<nav id="mainNav">
+					<h2 hidden>Main Navigation</h2>
+					<label for="hamburger">&#9776;</label>
+    				<input type="checkbox" id="hamburger"/>
+					<ul id="navMenu">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/goals">GOALS</a></li>
+						<li><a href="/events">EVENTS</a></li>
+						<li><a href="/donate">DONATE</a></li>
+					</ul>
+				</nav>
+			</div>
+			<a id="#logoLink" href="/"><img src="images/cereslogo.png" alt="Ceres Logo"></a>
+		</header>
+
+		<main id="app">
+			<h2 class="hidden">Events Page Content</h2>
+
+			<img id="character" src="../images/character.svg" alt="tree hugging an earth">
+			
+			<h2>#SustainTheFuture</h2>
+
+			<h3>JULY 21st</h3>
+
+			<h4>CERES DAY 2022</h4>
+			<div id="goalsContent">
+				<p>Join us for our first ever Ceres Day! This is the moment to change it all. The Earth is changing, and it's changing fast. We need to do something about it! Now is the time for us to preserve and protect our health and families. A green future is more important than you think.</p>
+
+				<p>We need to act fast. While there is still time to solve the climate crisis, it is running out. It's time to choose the Earth and restore nature for our children and our children's children.</p>
+
+				<p>For Ceres Day we will be having special t-shirt designs where 100% of proceeds go towards our Roadmap 2030. As well as a blackout hour to promote sustainable living. Please join us in our first ever Ceres Day!</p>
+			</div>
+
+			<h2>#SustainTheFuture</h2>
+
+		</main>
+
+		<footer id="mainFooter">
+			<div id="footerCompany">
+				<img src="../images/ceresIcon.jpg" alt="ceres logo icon">
+				<div id="address">
+					<h3>Our Headquarters</h3>
+					<p>
+						99 Chauncy Street, 6th floor
+						<br>
+						Boston, MA 02111
+					</p>
+				</div>
+			</div>
+			<div id="socialContact">
+				<a id="insta" href="http://www.instagram.com"><img src="../images/instagram.svg" alt="click to go to our instagram"></a>
+				<a id="youtube" href="http://www.youtube.com"><img src="../images/youtube.svg" alt="click to go to our youtube"></a>
+				<a id="tik" href="http://www.tiktok.com"><img src="../images/tiktok.svg" alt="click to go to our tiktok"></a>
+				<p id="email">info@ceres.org</p>
+				<p id="phone">617-247-0700</p>
+			</div>
+		</footer>
+
+		<!-- development version, includes helpful console warnings -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+		<!-- production version, optimized for size and speed -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+
+		<script src="script/main.js" type="module" defer></script>
+
+		<!-- imports java script file -->
+	</body>
+</html>

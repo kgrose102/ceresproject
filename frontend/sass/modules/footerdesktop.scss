@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px){
+    footer{
+        #socialContact{
+            grid-column: 6/-1;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0,1fr));
+            grid-template-rows: repeat(2, minmax(0,1fr));
+            img{
+                width: 45px;
+            }
+            #insta{
+                grid-column: 1;
+                grid-row: 1;
+
+            }
+
+            #youtube{
+                grid-column: 2;
+                grid-row: 1;
+            }
+
+            #tik{
+                grid-column: 3;
+                grid-row: 1;
+            }
+
+            #email{
+                grid-column: 1/2;
+                grid-row: 2;
+                margin-top: 10px;
+            }
+
+            #phone{
+                grid-column: 2/-1;
+                grid-row: 2;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+        }
+    }
+}

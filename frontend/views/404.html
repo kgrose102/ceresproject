@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Opens html, set site to english -->
+	<head>
+		<meta charset="UTF-8">
+		<!-- sets text language interpretation -->
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<!-- makes site view properly at mobile -->
+		<title>No Page Found</title>
+		<!-- sets title on tab -->
+		<link href="../css/main.css" rel="stylesheet" type="text/css">
+		<!-- links in the css file. Says what type of file it'll be, and says what is found in the file -->
+		<link href="//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<!-- Content Goes Here -->
+		<h1 hidden>Page Not Found</h1>
+		<header id="header">
+			<div id="headerNav" class="gridCon">
+				<nav id="mainNav">
+					<h2 hidden>Main Navigation</h2>
+					<label for="hamburger">&#9776;</label>
+    				<input type="checkbox" id="hamburger"/>
+					<ul id="navMenu">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/goals">GOALS</a></li>
+						<li><a href="/events">EVENTS</a></li>
+						<li><a href="/donate">DONATE</a></li>
+					</ul>
+				</nav>
+			</div>
+			<a id="#logoLink" href="/"><img src="images/cereslogo.png" alt="Ceres Logo"></a>
+		</header>
+
+		<main id="app">
+			<h2 class="hidden">No page found, please try again.</h2>
+			<img id="character" src="../images/character.svg" alt="tree hugging an earth">
+
+			<h2>We know you love us, but this page doesn't exist</h2>
+			
+
+		</main>
+
+		<footer id="mainFooter">
+			<div id="footerCompany">
+				<img src="../images/ceresIcon.jpg" alt="ceres logo icon">
+				<div id="address">
+					<h3>Our Headquarters</h3>
+					<p>
+						99 Chauncy Street, 6th floor
+						<br>
+						Boston, MA 02111
+					</p>
+				</div>
+			</div>
+			<div id="socialContact">
+				<a id="insta" href="http://www.instagram.com"><img src="../images/instagram.svg" alt="click to go to our instagram"></a>
+				<a id="youtube" href="http://www.youtube.com"><img src="../images/youtube.svg" alt="click to go to our youtube"></a>
+				<a id="tik" href="http://www.tiktok.com"><img src="../images/tiktok.svg" alt="click to go to our tiktok"></a>
+				<p id="email">info@ceres.org</p>
+				<p id="phone">617-247-0700</p>
+			</div>
+		</footer>
+
+		<!-- development version, includes helpful console warnings -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+		<!-- production version, optimized for size and speed -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+
+		<script src="script/main.js" type="module" defer></script>
+
+		<!-- imports java script file -->
+	</body>
+</html>

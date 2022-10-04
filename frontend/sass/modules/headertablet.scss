@@ -1,0 +1,85 @@
+@media screen and (min-width: 768px){
+    header{
+        display: grid;
+        grid-template-columns: repeat(9, minmax(0,1fr));
+        padding-left: 5px;
+        padding-right: 5px;
+        #logoLink{
+            grid-column: 1;
+            grid-row: 1;
+            margin: 0 5px 0 5px;
+        }
+
+        #headerNav{
+
+            grid-column: 3/-1;
+            grid-row: 1;
+            margin-left: 20px;
+            margin-top: 15px;
+            #mainNav{
+                width: 100%;
+                display: grid;
+                background-color: none;
+    
+                label{
+                    display: none; 
+                }
+    
+                #hamburger{
+                    display: none;
+                }
+    
+                #hamburger:checked{
+                    ~ #navMenu{
+                        display: grid;
+                    }
+                }
+    
+                #navMenu{ 
+                    grid-row: 1;
+                    display: grid;
+                    grid-template-columns: repeat(4, minmax(0,1fr));
+
+                    li{
+                        background-color: transparent;
+                        border-top: none;
+                        border-radius: 0px;
+
+                        li:last-child{
+                            border-bottom: none;
+                        }
+
+                        a{
+                            grid-row: 1;
+                            padding: 10px;
+                            color: var(--main-green);
+                            border-top: none;
+                            background-color: none;
+                            font-size: 20px;
+                            transition: width 2s;
+                        }
+            
+                        a:last-child{
+                            border-bottom: none;
+                        }
+            
+                        a:hover{
+                            border-bottom: 5px solid var(--accent-green);
+                            background-color: #EBEBEB;
+                            border-radius: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #mainLogo{
+            width: 128px;
+            display: block;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    }
+}

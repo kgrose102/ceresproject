@@ -1,0 +1,50 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 5px;
+    color: var(--accent-green);
+    background-color: #b8b8b8;
+    width: 100%;
+    p{
+        margin-left: 10px;
+        font-family: var(--secondary-font);
+    }
+    #footerCompany{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto 0 auto;
+        img{
+            width: 50px;
+        }
+        #address{
+            h3{
+                margin-left: 10px;
+                color: var(--accent-green);
+                text-decoration: underline;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    #socialContact{
+        display: flex;
+        flex-direction: row;
+        margin: 10px auto 0 auto;
+        
+        img{
+            width: 25px;
+            margin-right: 10px;
+
+            :last-child{
+                margin-right: 0;
+            }
+        }
+
+        p{
+            margin-left: 5px;
+
+        }
+
+    }
+}

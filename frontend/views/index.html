@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Opens html, set site to english -->
+	<head>
+		<meta charset="UTF-8">
+		<!-- sets text language interpretation -->
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<!-- makes site view properly at mobile -->
+		<title>AV Project Home Page</title>
+		<!-- sets title on tab -->
+		<link href="../css/main.css" rel="stylesheet" type="text/css">
+		<!-- links in the css file. Says what type of file it'll be, and says what is found in the file -->
+		<link href="//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<!-- Content Goes Here -->
+		<a href="#app" class="skip-nav">Skip Navigation</a>
+		<!-- adds a hidden skip navigation button for screen readers only shows when in "focus" -->
+		<h1 hidden>Ceres Campaign Main Page</h1>
+		<header id="header">
+			<div id="headerNav" class="gridCon">
+				<nav id="mainNav">
+					<h2 hidden>Main Navigation</h2>
+					<label for="hamburger">&#9776;</label>
+    				<input type="checkbox" id="hamburger"/>
+					<ul id="navMenu">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/goals">GOALS</a></li>
+						<li><a href="/events">EVENTS</a></li>
+						<li><a href="/donate">DONATE</a></li>
+					</ul>
+				</nav>
+			</div>
+			<a id="#logoLink" href="/"><img src="images/cereslogo.png" alt="Ceres Logo"></a>
+		</header>
+
+		<main id="app">
+			<h2 class="hidden">Home page content</h2>
+			
+			<img id="character" src="../images/character.svg" alt="tree hugging an earth">
+			
+			<p class="headline">Hey there! Ceres advances leadership among investors, companies and capital market influencers to drive solutions and take action on the worlds most pressing sustainability issues</p>
+
+			<h2>#SustainTheFuture</h2>
+
+			<div id="explination">
+				
+				<h3 id="adv">ADVANCING CLIMATE SOLUTIONS</h3>
+
+				<p class="para" id="adp">A strong economy needs a healthy planet. Ceres works with the most influential capital market leaders to advance innovative solutions to the climate crisis and achieve a zero emmissions future where people and the planet can prosper.</p>
+
+				<img aria-hidden="true" class="decor" src="../images/linebit.svg" alt="decorative line">
+
+				<h3 id="prot">PROTECTING GLOBAL WATER RESOURCES</h3>
+
+				<p class="para" id="protp">Research shows that we'll be unable to meet even 56% of global water demand by 2030 unless investors, companies, and governments urgently improve water stewardship. Ceres is driving capital market influencers to turn smart water management into a business fundamental and safeguard global freshwater supplies for  generations to come.</p>
+
+				<img aria-hidden="true" class="decor" id="second" src="../images/linebit.svg" alt="decorative line">
+
+				<h3 id="build">BUILDING A JUST AND INCLUSIVE ECONOMY</h3>
+
+				<p class="para" id="buildp">A strong economy needs a healthy planet. Ceres works with the most influential capital market leaders to advance innovative solutions to the climate crisis and achieve a zero emmissions future where people and the planet can prosper.</p>
+
+				<img aria-hidden="true" class="decor" src="../images/linebit.svg" alt="decorative line">
+
+				<h3 id="acc">ACCELERATING SUSTAINABLE MARKETS</h3>
+
+				<p class="para" id="accp">Ceres spurs investors, companies and key capital market influencers, including corporate directors and federal regulators, to act on climate change as a systemic financial risk--driving the large-scale behaviour and systems change needed to achieve a zero emissions economy.</p>
+
+				<img id="extra" aria-hidden="true" class="decor" src="../images/linebit.svg" alt="decorative line">
+			</div>
+
+			<video controls>
+				<source src="../video/ceres_video_main.mp4" type="video/mp4">
+			</video>
+
+		</main>
+
+		<footer id="mainFooter">
+			<div id="footerCompany">
+				<img src="../images/ceresIcon.jpg" alt="ceres logo icon">
+				<div id="address">
+					<h3>Our Headquarters</h3>
+					<p>
+						99 Chauncy Street, 6th floor
+						<br>
+						Boston, MA 02111
+					</p>
+				</div>
+			</div>
+			<div id="socialContact">
+				<a id="insta" href="http://www.instagram.com"><img src="../images/instagram.svg" alt="click to go to our instagram"></a>
+				<a id="youtube" href="http://www.youtube.com"><img src="../images/youtube.svg" alt="click to go to our youtube"></a>
+				<a id="tik" href="http://www.tiktok.com"><img src="../images/tiktok.svg" alt="click to go to our tiktok"></a>
+				<p id="email">info@ceres.org</p>
+				<p id="phone">617-247-0700</p>
+			</div>
+		</footer>
+
+		<!-- development version, includes helpful console warnings -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+		<!-- production version, optimized for size and speed -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+
+		<script src="script/main.js" type="module" defer></script>
+
+		<!-- imports java script file -->
+	</body>
+</html>

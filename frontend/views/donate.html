@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Opens html, set site to english -->
+	<head>
+		<meta charset="UTF-8">
+		<!-- sets text language interpretation -->
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<!-- makes site view properly at mobile -->
+		<title>AV Project Home Page</title>
+		<!-- sets title on tab -->
+		<link href="../css/main.css" rel="stylesheet" type="text/css">
+		<!-- links in the css file. Says what type of file it'll be, and says what is found in the file -->
+		<link href="//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<!-- Content Goes Here -->
+		<a href="#app" class="skip-nav">Skip Navigation</a>
+		<!-- adds a hidden skip navigation button for screen readers only shows when in "focus" -->
+		<h1 hidden>Ceres Donate Page</h1>
+		<header id="header">
+			<div id="headerNav" class="gridCon">
+				<nav id="mainNav">
+					<h2 hidden>Main Navigation</h2>
+					<label for="hamburger">&#9776;</label>
+    				<input type="checkbox" id="hamburger"/>
+					<ul id="navMenu">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/goals">GOALS</a></li>
+						<li><a href="/events">EVENTS</a></li>
+						<li><a href="/donate">DONATE</a></li>
+					</ul>
+				</nav>
+			</div>
+			<a id="#logoLink" href="/"><img src="images/cereslogo.png" alt="Ceres Logo"></a>
+		</header>
+
+		<main id="app">
+			<h2 class="hidden">Donate Page Content</h2>
+
+			<img id="shirt" src="../images/shirt.png" alt="Two people sitting wearing shirts of the ceres cartoon that is a tree hugging the earth">
+			<a href="#">Purchase</a>
+			<p>All proceeds go towards the Ceres Organization</p>
+
+			<h3>Donate to the Campaign</h3>
+
+			<form action="../../backend/includes/submit.php" method="POST">
+				<label for="firstname">First Name *</label>
+				<input id="firstname" type="text" name="first_name" placeholder="first Name" value="<?php echo $firstName; ?>">
+            <span>
+                <?php echo $firstNameError; ?>
+            </span>
+            <br>
+			<label for="lastname">Last Name *</label>
+            <input id="lastname" type="text" name="last_name" placeholder="last Name" value=" <?php echo $lastName; ?>" >
+            <span>
+                <?php echo $lastNameError; ?>
+            </span>
+            <br>
+			<label for="email">Email *</label>
+            <input type="text" name="email" type="email" placeholder="email" value="<?php echo $email; ?>">
+            <span>
+                <?php echo $emailError; ?>
+            </span>
+            <br>
+			
+			<label for="amount">Donation Amount *</label>
+			<input type="text" name="dono" placeholder="$" value="<?php echo $email; ?>">
+			<span>
+                <?php echo $donoError; ?>
+            </span>
+            <br>
+            <button type="submit">
+                Submit
+            </button>
+			</form>
+
+		</main>
+
+		<footer id="mainFooter">
+			<div id="footerCompany">
+				<img src="../images/ceresIcon.jpg" alt="ceres logo icon">
+				<div id="address">
+					<h3>Our Headquarters</h3>
+					<p>
+						99 Chauncy Street, 6th floor
+						<br>
+						Boston, MA 02111
+					</p>
+				</div>
+			</div>
+			<div id="socialContact">
+				<a id="insta" href="http://www.instagram.com"><img src="../images/instagram.svg" alt="click to go to our instagram"></a>
+				<a id="youtube" href="http://www.youtube.com"><img src="../images/youtube.svg" alt="click to go to our youtube"></a>
+				<a id="tik" href="http://www.tiktok.com"><img src="../images/tiktok.svg" alt="click to go to our tiktok"></a>
+				<p id="email">info@ceres.org</p>
+				<p id="phone">617-247-0700</p>
+			</div>
+		</footer>
+
+		<!-- development version, includes helpful console warnings -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+		<!-- production version, optimized for size and speed -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+
+		<script src="script/main.js" type="module" defer></script>
+
+		<!-- imports java script file -->
+	</body>
+</html>
