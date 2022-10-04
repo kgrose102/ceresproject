@@ -1,0 +1,52 @@
+main{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+
+    #shirt{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    a{
+        border-radius: 5px;
+        padding: 5px;
+        background-color: var(--main-blue);
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    p{
+        margin-top: 10px;
+        font-family: var(--secondary-font);
+    }
+
+    h3{
+        margin-top: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        label{
+            margin: 0 auto 5px auto;
+        }
+    
+        input{
+            padding: 5px;
+            box-sizing: border-box;
+            border: 2px solid var(--accent-blue);
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        button{
+            padding: 10px;
+            background-color: var(--accent-green);
+            color: white;
+        }
+    }
+    
+
+}

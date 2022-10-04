@@ -1,0 +1,59 @@
+@media screen and (min-width: 450px){
+    footer{
+        display: grid;
+        grid-template-columns: repeat(9, minmax(0, 1fr));
+        padding-top: 10px;
+
+        #footerCompany{
+            grid-column: 1/6;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            img{
+                width: 70px;
+                grid-column: 1;
+            }
+            #address{
+                grid-column: 2/-1;
+
+                h3{
+                    margin-left: 0;
+                }
+
+                p{
+                    margin-left: 0;
+                }
+            }
+        }
+
+        #socialContact{
+            grid-column: 6/-1;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0,1fr));
+            grid-template-rows: repeat(3, minmax(0,1fr));
+            #insta{
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            #youtube{
+                grid-column: 2;
+                grid-row: 1;
+            }
+
+            #tik{
+                grid-column: 3;
+                grid-row: 1;
+            }
+
+            #email{
+                grid-column: 1/-1;
+                grid-row: 2;
+            }
+
+            #phone{
+                grid-column: 1/-1;
+                grid-row: 3;
+            }
+        }
+    }
+}
