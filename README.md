@@ -24,7 +24,7 @@ This project was done as a mockup campaign and is in no way associated with Cere
 
 project is self contained and uses express, node.js, gulp, and Gulp-sass.
 
-Using terminal:
+Using terminal, powershell or other interface:
 
 Move into frontend folder
 
