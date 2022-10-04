@@ -14,7 +14,7 @@ We aim to help lead the world to building a just and sustainable future for peop
 
 Campaign organized and ran by Izzu, Kenneth Rose, Mackenzie Snider
 
-## ceres_project
+## Ceres Project Disclaimer
 
 This project was done as a mockup campaign and is in no way associated with Ceres and it's entities. All images and copy of Ceres belong to Ceres.
 
